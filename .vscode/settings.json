@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ailayer_layer_normalization.h": "c",
+        "ailayer_layer_normalization_default.h": "c",
+        "aimath_f32_default.h": "c",
+        "cstddef": "c",
+        "cmath": "c",
+        "aimath_basic.h": "c"
+    }
+}

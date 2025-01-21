@@ -815,14 +815,20 @@ void aimath_f32_default_mean_channelwise(const aitensor_t *x, int8_t channel_axi
         idx_multiplier2 *= x->shape[i];
     }
 
+	// printf("\ncheckpoiint layer norm mean start \n\n");
+
     for(i = 0; i < x->shape[uaxis]; i++){
         ((float *) result->data)[i] = 0.0f;
+
         for(j = 0; j < idx_multiplier1; j++){
             for(k = 0; k < idx_multiplier2; k++){
+				// printf(" x[%d]:  %f, ", k,( (float *) x->data)[i*idx_multiplier2 + j*idx_multiplier2*x->shape[uaxis] + k]);
                 ((float *) result->data)[i] += ((float *) x->data)[i*idx_multiplier2 + j*idx_multiplier2*x->shape[uaxis] + k];
             }
         }
+		// printf("\n");
         ((float *) result->data)[i] /= idx_multiplier1 * idx_multiplier2;
+		// printf("checkpoiint layernorm mean[%d] :  %f\n", i,( (float *) result->data)[i]);
     }
     return;
 }
@@ -852,6 +858,7 @@ void aimath_f32_default_variance_channelwise(const aitensor_t *x, int8_t channel
             }
         }
         ((float *) result->data)[i] = acc / (idx_multiplier1 * idx_multiplier2);
+		// printf("checkpoiint layernorm var[%d] :  %f\n", i,( (float *) result->data)[i]);
     }
     return;
 }
@@ -912,4 +919,179 @@ void aimath_f32_default_scale_by_batch_size(const aitensor_t *a, aitensor_t *res
     aimath_f32_default_scalar_mul(&factor, a, result);
     return;
 }
+
+/** @brief
+  *
+  * @author Maya
+ */
+void aimath_f32_default_layer_norm(const aitensor_t *x,
+                                    int8_t axis,
+                                    const void *eps,
+                                    const aitensor_t *means,
+                                    const aitensor_t *variances,
+                                    const aitensor_t *offsets,
+                                    const aitensor_t *scales,
+                                    aitensor_t *result)
+{
+	uint32_t i, j, k, idx;
+	float scale, offset;
+	uint8_t uaxis = axis < 0 ? x->dim + axis : axis; // Negative axis = indexing from the end
+	uint16_t batch_mul=1, feature_mul = 1;
+	// printf("inside layer norm() \nuaxis: %d, axis:%d:\n", uaxis, axis);
+	// printf("Shape of x: (");
+	// for (int j = 0; j < x->dim; j++) {
+	// 	printf("%d,", x->shape[j]);
+	// }
+	// printf(")\n");
+
+	// axis:0
+	// x(2,3)
+	for(i = 0; i < uaxis; i++){	// before uaxis
+        batch_mul *= x->shape[i];	// batch_mul:1
+    }
+    for(i = uaxis+1; i < x->dim; i++){	//after uaxis
+        feature_mul *= x->shape[i];	// feature_mul:3
+    }
+
+	// printf("batch_mul: %d, feature_mul: %d \n", batch_mul,feature_mul);
+
+	for ( i = 0; i < x->shape[uaxis]; i++)
+	{	
+		// printf("scale: %f, offset: %f\n", *scales, *offsets);
+		scale = ((float *) scales->data)[i] / (sqrt(((float *) variances->data)[i] + *((float *) eps)));
+		offset = ((float *) offsets->data)[i] - ((float *) means->data)[i] * scale;
+		
+		
+		for(j=0; j< feature_mul; j++){
+			idx = i*feature_mul +j;
+			((float *) result->data)[idx] = ((float *) x->data)[idx] * scale + offset;
+			// printf("x[%d] : %f,\ty[%d]: %f\n", idx, ((float *) x->data)[idx], idx, ((float *) result->data)[idx]);
+		}
+	}
+	
+}
+
+/** @brief
+  *
+  * @author Maya
+ */
+void aimath_f32_default_d_layer_norm(const aitensor_t *x,
+                                    int8_t axis,
+                                    const void *eps,
+                                    const aitensor_t *means,
+                                    const aitensor_t *variances,
+                                    const aitensor_t *offsets,
+                                    const aitensor_t *scales,
+                                    const aitensor_t *delta_out,
+									aitensor_t *delta_in,
+									aitensor_t *d_betas,
+									aitensor_t *d_gammas)
+{
+	// axis:0
+	// x(2,3)
+
+	uint32_t i, j, index;
+	uint8_t uaxis = axis < 0 ? x->dim + axis : axis;
+    uint32_t feature_size = x->shape[x->dim - 1]; // Last axis is normalized
+    // uint32_t num_instances = x->size / feature_size; // Number of instances in the batch
+	uint32_t num_instances = x->shape[uaxis]; // Number of instances in the batch
+    float sqrt_var, sqrt_var_inv, d_var, d_mean, xhat, d_xhat, shifted_x;
+
+	// printf("num_instances: %d, feature_size: %d\n", num_instances, feature_size);
+
+    // Iterate through all instances in the batch
+    for (i = 0; i < num_instances; i++) {
+        d_var = 0.0f;
+        d_mean = 0.0f;
+
+        // Compute sqrt(var + eps) and its reciprocal
+        sqrt_var = sqrtf(((float *) variances->data)[i] + *((float *) eps));
+        sqrt_var_inv = 1.0f / sqrt_var;
+
+        // First pass: Compute d_var and d_mean
+        for (j = 0; j < feature_size; j++) {
+            index = i * feature_size + j;
+            shifted_x = ((float *) x->data)[index] - ((float *) means->data)[i];
+            d_xhat = ((float *) delta_out->data)[index] * ((float *) scales->data)[j];
+            d_var += d_xhat * shifted_x;
+            d_mean += d_xhat;
+        }
+        d_var *= -0.5f * (sqrt_var_inv * sqrt_var_inv * sqrt_var_inv);
+        d_mean *= -sqrt_var_inv;
+
+        // Second pass: Compute gradients for inputs and parameters
+        for (j = 0; j < feature_size; j++) {
+            index = i * feature_size + j;
+            shifted_x = ((float *) x->data)[index] - ((float *) means->data)[i];
+            d_xhat = ((float *) delta_out->data)[index] * ((float *) scales->data)[j];
+            xhat = shifted_x * sqrt_var_inv;
+
+            if (delta_in != 0) {
+                ((float *) delta_in->data)[index] =
+                    d_xhat * sqrt_var_inv + d_var * 2 * shifted_x / feature_size + d_mean / feature_size;
+            }
+
+            if (d_gammas != 0) {
+                ((float *) d_gammas->data)[j] += ((float *) delta_out->data)[index] * xhat;
+            }
+
+            if (d_betas != 0) {
+                ((float *) d_betas->data)[j] += ((float *) delta_out->data)[index];
+            }
+        }
+    }
+
+    return;
+}
+
+
+// void aimath_f32_default_layer_norm_old(const aitensor_t *x,
+//                                     int8_t axis,
+//                                     const void *eps,
+//                                     const aitensor_t *means,
+//                                     const aitensor_t *variances,
+//                                     const aitensor_t *offsets,
+//                                     const aitensor_t *scales,
+//                                     aitensor_t *result)
+// {
+// 	// uint32_t i, j, k;
+// 	int i, j, k;
+// 	float scale, offset;
+// 	uint8_t uaxis = axis < 0 ? x->dim + axis : axis; // Negative axis = indexing from the end
+// 	uint16_t multiplier = 1;
+
+// 	printf("inside layer norm() uaxis: %d, axis:%d:\n", uaxis, axis);
+// 	printf("Shape of x: (");
+// 	for (int j = 0; j < x->dim; j++) {
+// 		printf("%d,", x->shape[j]);
+// 	}
+
+// 	printf(")\n");
+// 	// all the dimensions frm the given axis must be normalized
+//     for (i = x->dim - 1; i >= uaxis; i--) {
+// 		printf("%d \n", i);
+//         multiplier *= x->shape[i];	// size of all elements to be normalized
+//     }
+
+// 	// x->shape : (6,10,5)
+// 	// uaxis : 2
+// 	// expect mean and variance to have shape [6,10]
+
+// 	for (i = 0; i < x->shape[0]; i++) {	// batch axis: 6
+// 		for (j = 0; j < x->shape[1]; j++) {	// samples in a batch
+// 			scale = *scales / (sqrt(((float *) variances->data)[i* x->shape[1]+j] + *((float *) eps)));
+// 			offset = *offsets- ((float *) means->data)[i* x->shape[1]+j] * scale;
+// 			 for(k = 0; k < multiplier; k++){	// features
+// 				((float *) result->data)[i* x->shape[1] *multiplier + j*multiplier + k] =
+//                     ((float *) x->data)[i* x->shape[1] *multiplier + j*multiplier + k] * scale + offset;
+// 					printf("checkpoiint layernorm x_hat[%d] :  %f\n", (i* x->shape[1] *multiplier + j*multiplier + k),( (float *) result->data)[i* x->shape[1] *multiplier + j*multiplier + k]);
+// 			 }
+// 		}
+// 	}
+// 	return;
+// }
+
+
+
+
 

@@ -51,6 +51,7 @@ extern "C" {
 #include "basic/base/ailayer/ailayer_tanh.h"
 #include "basic/base/ailayer/ailayer_softmax.h"
 #include "basic/base/ailayer/ailayer_softsign.h"
+#include "basic/base/ailayer/ailayer_layer_normalization.h"
 
 // Include the loss base implementations
 #include "basic/base/ailoss/ailoss_mse.h"
@@ -78,6 +79,7 @@ extern "C" {
 #include "basic/default/ailayer/ailayer_tanh_default.h"
 #include "basic/default/ailayer/ailayer_softmax_default.h"
 #include "basic/default/ailayer/ailayer_softsign_default.h"
+#include "basic/default/ailayer/ailayer_layer_normalization_default.h"
 
 // Include the losses in default implementation
 #include "basic/default/ailoss/ailoss_mse_default.h"

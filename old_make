@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS = -fdiagnostics-color=always -g
+SRCDIR = /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src
+TARGET = main_c
+
+# Find all .c files in src and subdirectories
+SRCS = $(shell find $(SRCDIR) -type f -name '*.c')
+
+# Find all directories containing .h files
+INCLUDE_DIRS = $(shell find $(SRCDIR) -type d)
+INCLUDES = $(foreach dir, $(INCLUDE_DIRS), -I$(dir))
+
+all:
+	$(CC) $(CFLAGS) $(INCLUDES) $(SRCS) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET)

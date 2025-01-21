@@ -1782,5 +1782,35 @@ void aimath_f32_default_mse_loss_mean(const aitensor_t *predicted, const aitenso
   * @param *result          Scaled F32 tensor
   */
 void aimath_f32_default_scale_by_batch_size(const aitensor_t *a, aitensor_t *result);
+
+/** @brief
+  *
+  * @author Maya
+ */
+void aimath_f32_default_layer_norm(const aitensor_t *x,
+                                    int8_t axis,
+                                    const void *eps,
+                                    const aitensor_t *means,
+                                    const aitensor_t *variances,
+                                    const aitensor_t *offsets,
+                                    const aitensor_t *scales,
+                                    aitensor_t *result);
+
+/** @brief
+  *
+  * @author Maya
+ */
+void aimath_f32_default_d_layer_norm(const aitensor_t *x,
+                                    int8_t axis,
+                                    const void *eps,
+                                    const aitensor_t *means,
+                                    const aitensor_t *variances,
+                                    const aitensor_t *offsets,
+                                    const aitensor_t *scales,
+                                    const aitensor_t *delta_out,
+                                    aitensor_t *delta_in,
+                                    aitensor_t *d_betas,
+                                    aitensor_t *d_gammas);
+
 #endif // AIMATH_F32_DEFAULT
 

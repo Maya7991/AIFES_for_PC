@@ -1,0 +1,3 @@
+/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/CMakeFiles/main.dir
+/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/CMakeFiles/edit_cache.dir
+/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/CMakeFiles/rebuild_cache.dir

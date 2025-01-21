@@ -216,13 +216,18 @@ uint8_t aialgo_schedule_inference_memory(aimodel_t *model, void *memory_ptr, uin
 }
 
 aitensor_t *aialgo_forward_model(aimodel_t *model, aitensor_t *input_data)
-{
+{	
 	uint16_t i;
 	ailayer_t *layer_ptr = model->input_layer;
 
 	model->input_layer->result.data = input_data->data;
 	for(i = 0; i < model->layer_count; i++)
-	{
+	{	
+		// if((strcmp("Layer Normalization",layer_ptr->layer_type->name) == 0)){
+		// 	printf("----------------------------------------------");
+		// 	printf("\n\ncheckpoiint %s\n ", layer_ptr->layer_type->name);
+		// }
+		
 		layer_ptr->forward(layer_ptr);
 		layer_ptr = layer_ptr->output_layer;
 	}
@@ -234,7 +239,7 @@ AISTRING_STORAGE_WRAPPER(aistring_error_inference_model_1, "[aialgo_inference_mo
 uint8_t aialgo_inference_model(aimodel_t *model, aitensor_t *input_data, aitensor_t *output_data)
 {
 	uint32_t i, j;
-	uint16_t batch_size = input_data->shape[0];
+	uint16_t batch_size = input_data->shape[0];	// {1, 2}
 	uint16_t batch_slice_size = model->input_layer->result.shape[0]; // Size of a batch that is processed by one forward pass
 
 	// Do some error checking
@@ -269,12 +274,12 @@ uint8_t aialgo_inference_model(aimodel_t *model, aitensor_t *input_data, aitenso
 	aialgo_set_training_mode_model(model, FALSE);
 	aialgo_set_batch_mode_model(model, FALSE);
 
+	// printf("checkpoiint 2-1 \n");
+
 	for(i = 0; i < batch_size / batch_slice_size; i++)
 	{
 		input_batch.data = input_data->data + i * batch_slice_size * input_multiplier * input_data->dtype->size;
-
 		output_batch = aialgo_forward_model(model, &input_batch);
-
 		for(j = 0; j < aimath_tensor_elements(output_batch); j++)
 		{
 		    memcpy(output_data->data + i * batch_slice_size * output_multiplier * output_batch->dtype->size,
@@ -475,9 +480,10 @@ void aialgo_print_model_structure(aimodel_t *model)
 
 	for(i = 0; i < model->layer_count; i++){
         if(layer_ptr->layer_type->print_specs != 0){
-            AIPRINT_INT("%4d", i + 1);
+			AIPRINT_INT("%4d", i + 1);
             AIPRINT(aistring_print_model_structure_1);
             AIPRINT(layer_ptr->layer_type->name);
+			
             AIPRINT(aistring_print_model_structure_2);
             AIPRINT(layer_ptr->result.dtype->name);
             AIPRINT(aistring_print_model_structure_3);
@@ -486,6 +492,9 @@ void aialgo_print_model_structure(aimodel_t *model)
         } else {
             AIPRINT_INT("%4d", i + 1);
             AIPRINT(aistring_print_model_structure_5);
+			// printf("        %s\n", layer_ptr->layer_type->name);
+			// printf("        %s\n", layer_ptr->result.dtype->name);
+			// layer_ptr->layer_type->print_specs(layer_ptr);
         }
         layer_ptr = layer_ptr->output_layer;
 	}

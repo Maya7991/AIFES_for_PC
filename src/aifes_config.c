@@ -1,8 +1,8 @@
 /**
- * \file core/aifes_core.c
- * \version 2.2.0
+ * \file aifes_core.c
+ * \version 2.0alpha
  * \date 15.06.2021
- * \copyright  Copyright (C) 2020-2023  Fraunhofer Institute for Microelectronic Circuits and Systems.
+ * \copyright  Copyright (C) 2020-2021  Fraunhofer Institute for Microelectronic Circuits and Systems.
     All rights reserved.<br><br>
     AIfES is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published by
@@ -21,52 +21,47 @@
 
 #include "aifes_config.h"
 
+#include <stdio.h>
+
 #ifdef AIDEBUG_ENABLE_PRINTING
 
-#if defined AIFES_USE_ARDUINO_SERIAL_PRINT
-// Use the Serial.print functions for console printing
+int (*ailog_e)(const char *message) = aifes_log_e;
 int (*aiprint)(const char *string) = aifes_print;
 int (*aiprint_int)(const char *format, int var) = aifes_print_int;
 int (*aiprint_uint)(const char *format, unsigned int var) = aifes_print_uint;
 int (*aiprint_long_int)(const char *format, long int var) = aifes_print_long_int;
 int (*aiprint_float)(const char *format, float var) = aifes_print_float;
-#else
-int (*aiprint)(const char *string);
-int (*aiprint_int)(const char *format, int var);
-int (*aiprint_uint)(const char *format, unsigned int var);
-int (*aiprint_long_int)(const char *format, long int var);
-int (*aiprint_float)(const char *format, float var);
-#endif
 
+
+int aifes_log_e(const char *message)
+{
+    printf("\nERROR: ");
+    return printf("%s", message);
+}
 
 int aifes_print(const char *string)
 {
-  Serial.print((__FlashStringHelper *) string);
-  return 0;
+    return printf("%s", string);
 }
 
 int aifes_print_int(const char *format, int var)
 {
-  Serial.print(var);
-  return 0;
+    return printf(format, var);
 }
 
 int aifes_print_uint(const char *format, unsigned int var)
 {
-  Serial.print(var);
-  return 0;
+    return printf(format, var);
 }
 
 int aifes_print_long_int(const char *format, long int var)
 {
-  Serial.print(var);
-  return 0;
+    return printf(format, var);
 }
 
 int aifes_print_float(const char *format, float var)
 {
-  Serial.print(var);
-  return 0;
+    return printf(format, var);
 }
 
 #endif // AIDEBUG_ENABLE_PRINTING
