@@ -461,6 +461,79 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.o: src/basic/base/ail
   src/basic/base/aimath/aimath_basic.h \
   src/core/aifes_math.h
 
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o: src/basic/base/ailayer/ailayer_l2norm.c \
+  /usr/include/stdc-predef.h \
+  src/basic/base/ailayer/ailayer_l2norm.h \
+  src/core/aifes_core.h \
+  src/core/aifes_math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  src/aifes_config.h \
+  src/basic/base/aimath/aimath_basic.h \
+  src/core/aifes_math.h
+
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o: src/basic/base/ailayer/ailayer_layer_normalization.c \
   /usr/include/stdc-predef.h \
   src/basic/base/ailayer/ailayer_layer_normalization.h \
@@ -1952,6 +2025,82 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o: src/bas
   src/basic/base/aimath/aimath_q31.h \
   src/basic/default/aimath/aimath_q7_default.h \
   src/basic/base/aimath/aimath_q7.h
+
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o: src/basic/default/ailayer/ailayer_l2norm_default.c \
+  /usr/include/stdc-predef.h \
+  src/basic/default/ailayer/ailayer_l2norm_default.h \
+  src/basic/base/ailayer/ailayer_l2norm.h \
+  src/core/aifes_core.h \
+  src/core/aifes_math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  src/aifes_config.h \
+  src/basic/default/aimath/aimath_f32_default.h \
+  src/basic/base/aimath/aimath_f32.h \
+  src/core/aifes_math.h \
+  src/basic/base/aimath/aimath_basic.h
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o: src/basic/default/ailayer/ailayer_layer_normalization_default.c \
   /usr/include/stdc-predef.h \
@@ -4056,6 +4205,7 @@ CMakeFiles/main.dir/src/main.c.o: src/main.c \
   src/basic/base/ailayer/ailayer_softmax.h \
   src/basic/base/ailayer/ailayer_softsign.h \
   src/basic/base/ailayer/ailayer_layer_normalization.h \
+  src/basic/base/ailayer/ailayer_l2norm.h \
   src/basic/base/ailoss/ailoss_mse.h \
   src/basic/base/ailoss/ailoss_crossentropy.h \
   src/basic/base/ailayer/ailayer_softmax.h \
@@ -4084,6 +4234,8 @@ CMakeFiles/main.dir/src/main.c.o: src/main.c \
   src/basic/base/ailayer/ailayer_softsign.h \
   src/basic/default/ailayer/ailayer_layer_normalization_default.h \
   src/basic/base/ailayer/ailayer_layer_normalization.h \
+  src/basic/default/ailayer/ailayer_l2norm_default.h \
+  src/basic/base/ailayer/ailayer_l2norm.h \
   src/basic/default/ailoss/ailoss_mse_default.h \
   src/basic/base/ailoss/ailoss_mse.h \
   src/basic/default/ailoss/ailoss_crossentropy_default.h \
@@ -4120,6 +4272,14 @@ CMakeFiles/main.dir/src/main_copy.c.o: src/main\ copy.c \
 CMakeFiles/main.dir/src/main_copy_2.c.o: src/main\ copy\ 2.c \
   /usr/include/stdc-predef.h
 
+CMakeFiles/main.dir/src/main_copy_3.c.o: src/main\ copy\ 3.c \
+  /usr/include/stdc-predef.h
+
+CMakeFiles/main.dir/src/main_inf_only.c.o: src/main_inf_only.c \
+  /usr/include/stdc-predef.h
+
+
+src/main_inf_only.c:
 
 src/aifes.h:
 
@@ -4193,6 +4353,8 @@ src/cnn/default/aimath/aimath_cnn_f32_default.c:
 
 src/basic/default/ailayer/ailayer_layer_normalization_default.h:
 
+src/basic/default/ailayer/ailayer_l2norm_default.c:
+
 src/basic/default/ailayer/ailayer_input_default.h:
 
 src/basic/default/aimath/aimath_q31_default.c:
@@ -4203,9 +4365,11 @@ src/basic/default/ailayer/ailayer_elu_default.c:
 
 src/basic/cmsis/aimath/aimath_f32_cmsis.c:
 
-src/basic/base/aiopti/aiopti_sgd.h:
-
 src/basic/base/aiopti/aiopti_sgd.c:
+
+src/basic/default/ailoss/ailoss_mse_default.h:
+
+src/basic/base/aimath/aimath_q7.c:
 
 src/basic/cmsis/aimath/aimath_q31_cmsis.c:
 
@@ -4216,8 +4380,6 @@ src/basic/cmsis/aimath/aimath_q31_cmsis.c:
 src/basic/default/aimath/aimath_f32_default.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -4239,6 +4401,10 @@ src/basic/express/aifes_express_f32_fnn.c:
 
 src/basic/avr_pgm/aimath/aimath_q7_avr_pgm.c:
 
+src/basic/base/aiopti/aiopti_sgd.h:
+
+src/basic/base/ailayer/ailayer_l2norm.h:
+
 src/basic/avr_pgm/ailayer/ailayer_softmax_avr_pgm.c:
 
 src/basic/base/ailayer/ailayer_softsign.h:
@@ -4246,6 +4412,10 @@ src/basic/base/ailayer/ailayer_softsign.h:
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+src/basic/base/aimath/aimath_u8.c:
+
+/usr/include/features-time64.h:
 
 /usr/include/stdlib.h:
 
@@ -4329,6 +4499,10 @@ src/basic/default/aiopti/aiopti_adam_default.c:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+src/basic/base/ailayer/ailayer_l2norm.c:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 src/basic/default/ailayer/ailayer_softsign_default.h:
@@ -4359,6 +4533,8 @@ src/aifes_config.h:
 
 src/basic/default/ailayer/ailayer_layer_normalization_default.c:
 
+src/basic/default/ailayer/ailayer_l2norm_default.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/features.h:
@@ -4368,6 +4544,8 @@ src/basic/default/ailayer/ailayer_layer_normalization_default.c:
 /usr/include/endian.h:
 
 src/basic/avr_pgm/ailayer/ailayer_relu_avr_pgm.c:
+
+src/main\ copy\ 3.c:
 
 src/basic/avr_pgm/ailayer/ailayer_sigmoid_avr_pgm.c:
 
@@ -4422,10 +4600,6 @@ src/basic/cmsis/ailayer/ailayer_dense_cmsis.c:
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-src/basic/default/ailoss/ailoss_mse_default.h:
-
-src/basic/base/aimath/aimath_q7.c:
 
 /usr/include/alloca.h:
 
@@ -4526,7 +4700,3 @@ src/basic/base/ailoss/ailoss_mse.h:
 src/basic/avr_pgm/ailayer/ailayer_leaky_relu_avr_pgm.c:
 
 src/basic/base/aimath/aimath_basic.c:
-
-/usr/include/features-time64.h:
-
-src/basic/base/aimath/aimath_u8.c:

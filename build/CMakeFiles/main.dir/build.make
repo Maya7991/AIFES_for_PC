@@ -293,10 +293,24 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_input.c -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.s
 
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o: ../src/basic/base/ailayer/ailayer_l2norm.c
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_l2norm.c
+
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_l2norm.c > CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.i
+
+CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_l2norm.c -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.s
+
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o: ../src/basic/base/ailayer/ailayer_layer_normalization.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_layer_normalization.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.s: cmak
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o: ../src/basic/base/ailayer/ailayer_leaky_relu.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_leaky_relu.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o: ../src/basic/base/ailayer/ailayer_relu.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_relu.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o: ../src/basic/base/ailayer/ailayer_sigmoid.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_sigmoid.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_sigmoid.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o: ../src/basic/base/ailayer/ailayer_softmax.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_softmax.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softmax.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o: ../src/basic/base/ailayer/ailayer_softsign.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_softsign.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_softsign.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o: ../src/basic/base/ailayer/ailayer_tanh.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_tanh.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_tanh.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o: ../src/basic/base/ailayer/ailayer_template.c
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o -MF CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_template.c
 
 CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_template.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o: ../src/basic/base/ailoss/ailoss_crossentropy.c
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o -MF CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailoss/ailoss_crossentropy.c
 
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_crossentropy.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o: ../src/basic/base/ailoss/ailoss_mse.c
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o -MF CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o.d -o CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailoss/ailoss_mse.c
 
 CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/main.dir/src/basic/base/ailoss/ailoss_mse.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o: ../src/basic/base/aimath/aimath_basic.c
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o -MF CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o.d -o CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aimath/aimath_basic.c
 
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/main.dir/src/basic/base/aimath/aimath_basic.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o: ../src/basic/base/aimath/aimath_f32.c
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o -MF CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o.d -o CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aimath/aimath_f32.c
 
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/main.dir/src/basic/base/aimath/aimath_f32.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o: ../src/basic/base/aimath/aimath_q31.c
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o -MF CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o.d -o CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aimath/aimath_q31.c
 
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.i: cmake_force
@@ -478,7 +492,7 @@ CMakeFiles/main.dir/src/basic/base/aimath/aimath_q31.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o: ../src/basic/base/aimath/aimath_q7.c
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o -MF CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o.d -o CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aimath/aimath_q7.c
 
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/main.dir/src/basic/base/aimath/aimath_q7.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o: ../src/basic/base/aimath/aimath_u8.c
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o -MF CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o.d -o CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aimath/aimath_u8.c
 
 CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/main.dir/src/basic/base/aimath/aimath_u8.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o: ../src/basic/base/aiopti/aiopti_adam.c
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o -MF CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o.d -o CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aiopti/aiopti_adam.c
 
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.i: cmake_force
@@ -520,7 +534,7 @@ CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_adam.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o: ../src/basic/base/aiopti/aiopti_sgd.c
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o -MF CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o.d -o CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/aiopti/aiopti_sgd.c
 
 CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.i: cmake_force
@@ -534,7 +548,7 @@ CMakeFiles/main.dir/src/basic/base/aiopti/aiopti_sgd.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o: ../src/basic/cmsis/ailayer/ailayer_dense_cmsis.c
 CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o -MF CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o.d -o CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c
 
 CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.i: cmake_force
@@ -548,7 +562,7 @@ CMakeFiles/main.dir/src/basic/cmsis/ailayer/ailayer_dense_cmsis.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o: ../src/basic/cmsis/aimath/aimath_f32_cmsis.c
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o -MF CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o.d -o CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/cmsis/aimath/aimath_f32_cmsis.c
 
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.i: cmake_force
@@ -562,7 +576,7 @@ CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_f32_cmsis.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o: ../src/basic/cmsis/aimath/aimath_q31_cmsis.c
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o -MF CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o.d -o CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/cmsis/aimath/aimath_q31_cmsis.c
 
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.i: cmake_force
@@ -576,7 +590,7 @@ CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q31_cmsis.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o: ../src/basic/cmsis/aimath/aimath_q7_cmsis.c
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o -MF CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o.d -o CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/cmsis/aimath/aimath_q7_cmsis.c
 
 CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.i: cmake_force
@@ -590,7 +604,7 @@ CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o: ../src/basic/default/ailayer/ailayer_dense_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_dense_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.i: cmake_force
@@ -604,7 +618,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.s: cmake_f
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o: ../src/basic/default/ailayer/ailayer_elu_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_elu_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.i: cmake_force
@@ -618,7 +632,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.s: cmake_for
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o: ../src/basic/default/ailayer/ailayer_input_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_input_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.i: cmake_force
@@ -629,10 +643,24 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_input_default.c -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.s
 
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o: ../src/basic/default/ailayer/ailayer_l2norm_default.c
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_l2norm_default.c
+
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_l2norm_default.c > CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.i
+
+CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_l2norm_default.c -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.s
+
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o: ../src/basic/default/ailayer/ailayer_layer_normalization_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_layer_normalization_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.i: cmake_force
@@ -646,7 +674,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_defaul
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o: ../src/basic/default/ailayer/ailayer_leaky_relu_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_leaky_relu_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.i: cmake_force
@@ -660,7 +688,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.s: cm
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o: ../src/basic/default/ailayer/ailayer_relu_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_relu_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.i: cmake_force
@@ -674,7 +702,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.s: cmake_fo
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o: ../src/basic/default/ailayer/ailayer_sigmoid_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_sigmoid_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.i: cmake_force
@@ -688,7 +716,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_sigmoid_default.c.s: cmake
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o: ../src/basic/default/ailayer/ailayer_softmax_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_softmax_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.i: cmake_force
@@ -702,7 +730,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softmax_default.c.s: cmake
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o: ../src/basic/default/ailayer/ailayer_softsign_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_softsign_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.i: cmake_force
@@ -716,7 +744,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_softsign_default.c.s: cmak
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o: ../src/basic/default/ailayer/ailayer_tanh_default.c
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_tanh_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.i: cmake_force
@@ -730,7 +758,7 @@ CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_tanh_default.c.s: cmake_fo
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o: ../src/basic/default/ailoss/ailoss_crossentropy_default.c
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailoss/ailoss_crossentropy_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.i: cmake_force
@@ -744,7 +772,7 @@ CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_crossentropy_default.c.s: cm
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o: ../src/basic/default/ailoss/ailoss_mse_default.c
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o -MF CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailoss/ailoss_mse_default.c
 
 CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.i: cmake_force
@@ -758,7 +786,7 @@ CMakeFiles/main.dir/src/basic/default/ailoss/ailoss_mse_default.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o: ../src/basic/default/aimath/aimath_f32_default.c
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o -MF CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/aimath/aimath_f32_default.c
 
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.i: cmake_force
@@ -772,7 +800,7 @@ CMakeFiles/main.dir/src/basic/default/aimath/aimath_f32_default.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o: ../src/basic/default/aimath/aimath_q31_default.c
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o -MF CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/aimath/aimath_q31_default.c
 
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.i: cmake_force
@@ -786,7 +814,7 @@ CMakeFiles/main.dir/src/basic/default/aimath/aimath_q31_default.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o: ../src/basic/default/aimath/aimath_q7_default.c
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o -MF CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/aimath/aimath_q7_default.c
 
 CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.i: cmake_force
@@ -800,7 +828,7 @@ CMakeFiles/main.dir/src/basic/default/aimath/aimath_q7_default.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o: ../src/basic/default/aiopti/aiopti_adam_default.c
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o -MF CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/aiopti/aiopti_adam_default.c
 
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.i: cmake_force
@@ -814,7 +842,7 @@ CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_adam_default.c.s: cmake_forc
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o: ../src/basic/default/aiopti/aiopti_sgd_default.c
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o -MF CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o.d -o CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/aiopti/aiopti_sgd_default.c
 
 CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.i: cmake_force
@@ -828,7 +856,7 @@ CMakeFiles/main.dir/src/basic/default/aiopti/aiopti_sgd_default.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o: ../src/basic/express/aifes_express_f32_fnn.c
 CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o -MF CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o.d -o CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/express/aifes_express_f32_fnn.c
 
 CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.i: cmake_force
@@ -842,7 +870,7 @@ CMakeFiles/main.dir/src/basic/express/aifes_express_f32_fnn.c.s: cmake_force
 CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o: ../src/basic/express/aifes_express_q7_fnn.c
 CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o -MF CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o.d -o CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/express/aifes_express_q7_fnn.c
 
 CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.i: cmake_force
@@ -856,7 +884,7 @@ CMakeFiles/main.dir/src/basic/express/aifes_express_q7_fnn.c.s: cmake_force
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o: ../src/cnn/base/ailayer/ailayer_batch_normalization.c
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o -MF CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o.d -o CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/base/ailayer/ailayer_batch_normalization.c
 
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.i: cmake_force
@@ -870,7 +898,7 @@ CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_batch_normalization.c.s: cmake_
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o: ../src/cnn/base/ailayer/ailayer_conv2d.c
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o -MF CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o.d -o CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/base/ailayer/ailayer_conv2d.c
 
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.i: cmake_force
@@ -884,7 +912,7 @@ CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_conv2d.c.s: cmake_force
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o: ../src/cnn/base/ailayer/ailayer_maxpool2d.c
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o -MF CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o.d -o CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/base/ailayer/ailayer_maxpool2d.c
 
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.i: cmake_force
@@ -898,7 +926,7 @@ CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_maxpool2d.c.s: cmake_force
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o: ../src/cnn/base/ailayer/ailayer_reshape.c
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o -MF CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o.d -o CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/base/ailayer/ailayer_reshape.c
 
 CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.i: cmake_force
@@ -912,7 +940,7 @@ CMakeFiles/main.dir/src/cnn/base/ailayer/ailayer_reshape.c.s: cmake_force
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o: ../src/cnn/default/ailayer/ailayer_batch_normalization_default.c
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o -MF CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o.d -o CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/default/ailayer/ailayer_batch_normalization_default.c
 
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.c.i: cmake_force
@@ -926,7 +954,7 @@ CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_batch_normalization_default.
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o: ../src/cnn/default/ailayer/ailayer_conv2d_default.c
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o -MF CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o.d -o CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/default/ailayer/ailayer_conv2d_default.c
 
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.i: cmake_force
@@ -940,7 +968,7 @@ CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_conv2d_default.c.s: cmake_fo
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o: ../src/cnn/default/ailayer/ailayer_maxpool2d_default.c
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o -MF CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o.d -o CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/default/ailayer/ailayer_maxpool2d_default.c
 
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.i: cmake_force
@@ -954,7 +982,7 @@ CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_maxpool2d_default.c.s: cmake
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o: ../src/cnn/default/ailayer/ailayer_reshape_default.c
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o -MF CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o.d -o CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/default/ailayer/ailayer_reshape_default.c
 
 CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.i: cmake_force
@@ -968,7 +996,7 @@ CMakeFiles/main.dir/src/cnn/default/ailayer/ailayer_reshape_default.c.s: cmake_f
 CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o: ../src/cnn/default/aimath/aimath_cnn_f32_default.c
 CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o -MF CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o.d -o CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/cnn/default/aimath/aimath_cnn_f32_default.c
 
 CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.i: cmake_force
@@ -982,7 +1010,7 @@ CMakeFiles/main.dir/src/cnn/default/aimath/aimath_cnn_f32_default.c.s: cmake_for
 CMakeFiles/main.dir/src/main_copy_2.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main_copy_2.c.o: ../src/main\ copy\ 2.c
 CMakeFiles/main.dir/src/main_copy_2.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/main.dir/src/main_copy_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/main.dir/src/main_copy_2.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main_copy_2.c.o -MF CMakeFiles/main.dir/src/main_copy_2.c.o.d -o CMakeFiles/main.dir/src/main_copy_2.c.o -c "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/main copy 2.c"
 
 CMakeFiles/main.dir/src/main_copy_2.c.i: cmake_force
@@ -996,7 +1024,7 @@ CMakeFiles/main.dir/src/main_copy_2.c.s: cmake_force
 CMakeFiles/main.dir/src/main_copy_3.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main_copy_3.c.o: ../src/main\ copy\ 3.c
 CMakeFiles/main.dir/src/main_copy_3.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/main.dir/src/main_copy_3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/main.dir/src/main_copy_3.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main_copy_3.c.o -MF CMakeFiles/main.dir/src/main_copy_3.c.o.d -o CMakeFiles/main.dir/src/main_copy_3.c.o -c "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/main copy 3.c"
 
 CMakeFiles/main.dir/src/main_copy_3.c.i: cmake_force
@@ -1010,7 +1038,7 @@ CMakeFiles/main.dir/src/main_copy_3.c.s: cmake_force
 CMakeFiles/main.dir/src/main_copy.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main_copy.c.o: ../src/main\ copy.c
 CMakeFiles/main.dir/src/main_copy.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/main.dir/src/main_copy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/main.dir/src/main_copy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main_copy.c.o -MF CMakeFiles/main.dir/src/main_copy.c.o.d -o CMakeFiles/main.dir/src/main_copy.c.o -c "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/main copy.c"
 
 CMakeFiles/main.dir/src/main_copy.c.i: cmake_force
@@ -1024,7 +1052,7 @@ CMakeFiles/main.dir/src/main_copy.c.s: cmake_force
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.o: ../src/main.c
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/main.dir/src/main.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
@@ -1038,7 +1066,7 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 CMakeFiles/main.dir/src/main_inf_only.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main_inf_only.c.o: ../src/main_inf_only.c
 CMakeFiles/main.dir/src/main_inf_only.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/main.dir/src/main_inf_only.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/main.dir/src/main_inf_only.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main_inf_only.c.o -MF CMakeFiles/main.dir/src/main_inf_only.c.o.d -o CMakeFiles/main.dir/src/main_inf_only.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/main_inf_only.c
 
 CMakeFiles/main.dir/src/main_inf_only.c.i: cmake_force
@@ -1067,6 +1095,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_dense.c.o" \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_elu.c.o" \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.o" \
+"CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o" \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o" \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o" \
 "CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o" \
@@ -1091,6 +1120,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o" \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o" \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o" \
+"CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o" \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o" \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o" \
 "CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o" \
@@ -1141,6 +1171,7 @@ main: CMakeFiles/main.dir/src/basic/base/aialgo/aialgo_sequential_training.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_dense.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_elu.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.o
+main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_leaky_relu.c.o
 main: CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_relu.c.o
@@ -1165,6 +1196,7 @@ main: CMakeFiles/main.dir/src/basic/cmsis/aimath/aimath_q7_cmsis.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_dense_default.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_elu_default.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o
+main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_layer_normalization_default.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_leaky_relu_default.c.o
 main: CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_relu_default.c.o
@@ -1197,7 +1229,7 @@ main: CMakeFiles/main.dir/src/main.c.o
 main: CMakeFiles/main.dir/src/main_inf_only.c.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

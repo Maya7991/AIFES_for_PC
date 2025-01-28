@@ -1812,5 +1812,9 @@ void aimath_f32_default_d_layer_norm(const aitensor_t *x,
                                     aitensor_t *d_betas,
                                     aitensor_t *d_gammas);
 
+void aimath_f32_default_l2norm(const aitensor_t *x, aitensor_t *result);
+
+void aimath_f32_default_d_l2norm(const aitensor_t *x, aitensor_t *delta_in);                                    
+
 #endif // AIMATH_F32_DEFAULT
 

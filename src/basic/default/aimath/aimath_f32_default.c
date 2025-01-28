@@ -920,6 +920,101 @@ void aimath_f32_default_scale_by_batch_size(const aitensor_t *a, aitensor_t *res
     return;
 }
 
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+/** @brief
+  *
+  * @author Maya
+ */
+
+void aimath_f32_default_l2norm(const aitensor_t *x, aitensor_t *result)
+{
+	float epsilon = 1e-6f;
+	// Get the number of dimensions and shape of the input tensor
+    size_t num_dims = x->dim;
+    uint16_t *x_shape = x->shape;
+    
+    // The trailing dimension is the last dimension in the tensor
+    const int trailing_dim = num_dims - 1;
+    const int depth = x_shape[trailing_dim];
+    
+    // Compute the outer size (product of all dimensions except the last one)
+    int outer_size = 1;
+    for (int i = 0; i < trailing_dim; ++i) {
+        outer_size *= x_shape[i];
+    }
+
+    // Iterate over each slice in the tensor
+    for (int i = 0; i < outer_size; ++i) {
+        float squared_l2_norm = 0;
+
+        // Compute the squared L2 norm for the current slice
+        for (int c = 0; c < depth; ++c) {
+            float val = ((float *)x->data)[i * depth + c];
+            squared_l2_norm += val * val;
+        }
+
+        // Compute the L2 norm and ensure it's not less than epsilon
+        float l2_norm = sqrtf(squared_l2_norm);
+        l2_norm = (l2_norm > epsilon) ? l2_norm : epsilon;
+
+        // Normalize the elements in the current slice
+        for (int c = 0; c < depth; ++c) {
+            ((float *)result->data)[i * depth + c] =
+                ((float *)x->data)[i * depth + c] / l2_norm;
+        }
+    }
+	return;
+}
+
+void aimath_f32_default_d_l2norm(const aitensor_t *x, aitensor_t *delta_in)
+{
+	// store the l2norm during forward and use it here 
+	// or calculate it again here from x_in and then just use the multiply function
+	// test this before doing any big changes
+	// find any examples with l2norm or just put l2norm in a lenet+mnist architecture for testing
+}
+
+
+// void aimath_f32_default_l2norm(const aitensor_t *x, aitensor_t *result)
+// {
+// 	size_t num_dims = x->dim;
+// 	uint16_t *x_shape = x->shape;
+
+// 	printf("Tensor shape: [");
+//     for (uint16_t i = 0; i < num_dims; ++i) {
+//         printf("%u", x_shape[i]);
+//         if (i < num_dims - 1) {
+//             printf(", ");
+//         }
+//     }
+//     printf("]\n");
+
+// 	// Step 2: Compute L2 normalization
+//     float squared_l2_norm = 0.0f;
+//     uint32_t num_elements = aimath_tensor_elements(x); // Total elements in tensor
+
+// 	// Compute the squared L2 norm
+//     for (uint32_t i = 0; i < num_elements; ++i) {
+//         float val = ((float *)x->data)[i];
+//         squared_l2_norm += val * val;
+//     }
+
+// 	// Calculate the L2 norm and prevent division by zero
+//     float l2_norm = sqrtf(squared_l2_norm);
+//     float epsilon = 1e-6f;
+//     l2_norm = l2_norm > epsilon ? l2_norm : epsilon;
+
+//     // Normalize each element
+//     for (uint32_t i = 0; i < num_elements; ++i) {
+//         ((float *)result->data)[i] = ((float *)x->data)[i] / l2_norm;
+//     }
+// 	return;
+// }
+
 /** @brief
   *
   * @author Maya
@@ -968,7 +1063,7 @@ void aimath_f32_default_layer_norm(const aitensor_t *x,
 			// printf("x[%d] : %f,\ty[%d]: %f\n", idx, ((float *) x->data)[idx], idx, ((float *) result->data)[idx]);
 		}
 	}
-	
+	return;
 }
 
 /** @brief
@@ -1004,9 +1099,26 @@ void aimath_f32_default_d_layer_norm(const aitensor_t *x,
         d_var = 0.0f;
         d_mean = 0.0f;
 
-        // Compute sqrt(var + eps) and its reciprocal
-        sqrt_var = sqrtf(((float *) variances->data)[i] + *((float *) eps));
-        sqrt_var_inv = 1.0f / sqrt_var;
+        // // Compute sqrt(var + eps) and its reciprocal
+        // sqrt_var = sqrtf(((float *) variances->data)[i] + *((float *) eps));
+        // sqrt_var_inv = 1.0f / sqrt_var;
+
+		float var_eps = ((float *) variances->data)[i] + *((float *) eps);
+		if (var_eps <= 0.0f) {
+			// printf("Error: Variance + Epsilon is non-positive! Variance: %f, Epsilon: %f\n", 
+				// ((float *) variances->data)[i], *((float *) eps));
+			return; // Or handle error gracefully
+		}
+
+		sqrt_var = sqrtf(var_eps);
+		sqrt_var_inv = 1.0f / sqrt_var;
+
+		// Check for NaNs
+		if (isnan(sqrt_var) || isnan(sqrt_var_inv)) {
+			printf("Error: sqrt_var or sqrt_var_inv is NaN! Variance: %f, Epsilon: %f\n", 
+				((float *) variances->data)[i], *((float *) eps));
+			return; // Or handle error gracefully
+		}
 
         // First pass: Compute d_var and d_mean
         for (j = 0; j < feature_size; j++) {
@@ -1015,9 +1127,21 @@ void aimath_f32_default_d_layer_norm(const aitensor_t *x,
             d_xhat = ((float *) delta_out->data)[index] * ((float *) scales->data)[j];
             d_var += d_xhat * shifted_x;
             d_mean += d_xhat;
+
+			// Debugging shifted_x and d_xhat
+			if (isnan(shifted_x) || isnan(d_xhat)) {
+				printf("Error: shifted_x or d_xhat is NaN! shifted_x: %f, d_xhat: %f\n", shifted_x, d_xhat);
+				return;
+			}
         }
         d_var *= -0.5f * (sqrt_var_inv * sqrt_var_inv * sqrt_var_inv);
         d_mean *= -sqrt_var_inv;
+
+		// Debugging d_var and d_mean
+		if (isnan(d_var) || isnan(d_mean)) {
+			printf("Error: d_var or d_mean is NaN! d_var: %f, d_mean: %f\n", d_var, d_mean);
+			return;
+		}
 
         // Second pass: Compute gradients for inputs and parameters
         for (j = 0; j < feature_size; j++) {
@@ -1026,17 +1150,39 @@ void aimath_f32_default_d_layer_norm(const aitensor_t *x,
             d_xhat = ((float *) delta_out->data)[index] * ((float *) scales->data)[j];
             xhat = shifted_x * sqrt_var_inv;
 
+			// Debugging intermediate values
+			if (isnan(xhat) || isnan(shifted_x)) {
+				printf("Error: xhat or shifted_x is NaN! xhat: %f, shifted_x: %f\n", xhat, shifted_x);
+				return;
+			}
+
             if (delta_in != 0) {
                 ((float *) delta_in->data)[index] =
                     d_xhat * sqrt_var_inv + d_var * 2 * shifted_x / feature_size + d_mean / feature_size;
+
+				// Debugging delta_in
+				if (isnan(((float *) delta_in->data)[index])) {
+					printf("Error: delta_in[%d] is NaN!\n", index);
+					return;
+				}
             }
 
             if (d_gammas != 0) {
                 ((float *) d_gammas->data)[j] += ((float *) delta_out->data)[index] * xhat;
+				// Debugging d_gammas
+				if (isnan(((float *) d_gammas->data)[j])) {
+					printf("Error: d_gammas[%d] is NaN!\n", j);
+					return;
+				}
             }
 
             if (d_betas != 0) {
                 ((float *) d_betas->data)[j] += ((float *) delta_out->data)[index];
+				// Debugging d_betas
+				if (isnan(((float *) d_betas->data)[j])) {
+					printf("Error: d_betas[%d] is NaN!\n", j);
+					return;
+				}
             }
         }
     }
@@ -1045,51 +1191,6 @@ void aimath_f32_default_d_layer_norm(const aitensor_t *x,
 }
 
 
-// void aimath_f32_default_layer_norm_old(const aitensor_t *x,
-//                                     int8_t axis,
-//                                     const void *eps,
-//                                     const aitensor_t *means,
-//                                     const aitensor_t *variances,
-//                                     const aitensor_t *offsets,
-//                                     const aitensor_t *scales,
-//                                     aitensor_t *result)
-// {
-// 	// uint32_t i, j, k;
-// 	int i, j, k;
-// 	float scale, offset;
-// 	uint8_t uaxis = axis < 0 ? x->dim + axis : axis; // Negative axis = indexing from the end
-// 	uint16_t multiplier = 1;
-
-// 	printf("inside layer norm() uaxis: %d, axis:%d:\n", uaxis, axis);
-// 	printf("Shape of x: (");
-// 	for (int j = 0; j < x->dim; j++) {
-// 		printf("%d,", x->shape[j]);
-// 	}
-
-// 	printf(")\n");
-// 	// all the dimensions frm the given axis must be normalized
-//     for (i = x->dim - 1; i >= uaxis; i--) {
-// 		printf("%d \n", i);
-//         multiplier *= x->shape[i];	// size of all elements to be normalized
-//     }
-
-// 	// x->shape : (6,10,5)
-// 	// uaxis : 2
-// 	// expect mean and variance to have shape [6,10]
-
-// 	for (i = 0; i < x->shape[0]; i++) {	// batch axis: 6
-// 		for (j = 0; j < x->shape[1]; j++) {	// samples in a batch
-// 			scale = *scales / (sqrt(((float *) variances->data)[i* x->shape[1]+j] + *((float *) eps)));
-// 			offset = *offsets- ((float *) means->data)[i* x->shape[1]+j] * scale;
-// 			 for(k = 0; k < multiplier; k++){	// features
-// 				((float *) result->data)[i* x->shape[1] *multiplier + j*multiplier + k] =
-//                     ((float *) x->data)[i* x->shape[1] *multiplier + j*multiplier + k] * scale + offset;
-// 					printf("checkpoiint layernorm x_hat[%d] :  %f\n", (i* x->shape[1] *multiplier + j*multiplier + k),( (float *) result->data)[i* x->shape[1] *multiplier + j*multiplier + k]);
-// 			 }
-// 		}
-// 	}
-// 	return;
-// }
 
 
 

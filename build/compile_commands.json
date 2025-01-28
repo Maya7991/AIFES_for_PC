@@ -81,6 +81,11 @@
 },
 {
   "directory": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build",
+  "command": "/usr/bin/gcc  -I/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src -g -g -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_l2norm.c",
+  "file": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_l2norm.c"
+},
+{
+  "directory": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build",
   "command": "/usr/bin/gcc  -I/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src -g -g -o CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_layer_normalization.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_layer_normalization.c",
   "file": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/base/ailayer/ailayer_layer_normalization.c"
 },
@@ -198,6 +203,11 @@
   "directory": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build",
   "command": "/usr/bin/gcc  -I/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src -g -g -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_input_default.c",
   "file": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_input_default.c"
+},
+{
+  "directory": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build",
+  "command": "/usr/bin/gcc  -I/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src -g -g -o CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o -c /mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_l2norm_default.c",
+  "file": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/src/basic/default/ailayer/ailayer_l2norm_default.c"
 },
 {
   "directory": "/mnt/c/Users/mayaa/OneDrive/Documents/Master_thesis/AIfES_for_Arduino/build",

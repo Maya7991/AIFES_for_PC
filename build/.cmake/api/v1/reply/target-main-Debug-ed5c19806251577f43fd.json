@@ -131,7 +131,9 @@
 				66,
 				67,
 				68,
-				69
+				69,
+				70,
+				71
 			]
 		}
 	],
@@ -238,7 +240,9 @@
 				66,
 				67,
 				68,
-				69
+				69,
+				70,
+				71
 			]
 		}
 	],
@@ -338,6 +342,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/basic/base/ailayer/ailayer_input.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/basic/base/ailayer/ailayer_l2norm.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -482,6 +492,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/basic/default/ailayer/ailayer_input_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/basic/default/ailayer/ailayer_l2norm_default.c",
 			"sourceGroupIndex" : 0
 		},
 		{

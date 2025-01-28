@@ -513,6 +513,30 @@ src/basic/base/ailayer/ailayer_input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_input.c.s
 .PHONY : src/basic/base/ailayer/ailayer_input.c.s
 
+src/basic/base/ailayer/ailayer_l2norm.o: src/basic/base/ailayer/ailayer_l2norm.c.o
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.o
+
+# target to build an object file
+src/basic/base/ailayer/ailayer_l2norm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.o
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.c.o
+
+src/basic/base/ailayer/ailayer_l2norm.i: src/basic/base/ailayer/ailayer_l2norm.c.i
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.i
+
+# target to preprocess a source file
+src/basic/base/ailayer/ailayer_l2norm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.i
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.c.i
+
+src/basic/base/ailayer/ailayer_l2norm.s: src/basic/base/ailayer/ailayer_l2norm.c.s
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.s
+
+# target to generate assembly for a file
+src/basic/base/ailayer/ailayer_l2norm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/base/ailayer/ailayer_l2norm.c.s
+.PHONY : src/basic/base/ailayer/ailayer_l2norm.c.s
+
 src/basic/base/ailayer/ailayer_layer_normalization.o: src/basic/base/ailayer/ailayer_layer_normalization.c.o
 .PHONY : src/basic/base/ailayer/ailayer_layer_normalization.o
 
@@ -1088,6 +1112,30 @@ src/basic/default/ailayer/ailayer_input_default.s: src/basic/default/ailayer/ail
 src/basic/default/ailayer/ailayer_input_default.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_input_default.c.s
 .PHONY : src/basic/default/ailayer/ailayer_input_default.c.s
+
+src/basic/default/ailayer/ailayer_l2norm_default.o: src/basic/default/ailayer/ailayer_l2norm_default.c.o
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.o
+
+# target to build an object file
+src/basic/default/ailayer/ailayer_l2norm_default.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.o
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.c.o
+
+src/basic/default/ailayer/ailayer_l2norm_default.i: src/basic/default/ailayer/ailayer_l2norm_default.c.i
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.i
+
+# target to preprocess a source file
+src/basic/default/ailayer/ailayer_l2norm_default.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.i
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.c.i
+
+src/basic/default/ailayer/ailayer_l2norm_default.s: src/basic/default/ailayer/ailayer_l2norm_default.c.s
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.s
+
+# target to generate assembly for a file
+src/basic/default/ailayer/ailayer_l2norm_default.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/basic/default/ailayer/ailayer_l2norm_default.c.s
+.PHONY : src/basic/default/ailayer/ailayer_l2norm_default.c.s
 
 src/basic/default/ailayer/ailayer_layer_normalization_default.o: src/basic/default/ailayer/ailayer_layer_normalization_default.c.o
 .PHONY : src/basic/default/ailayer/ailayer_layer_normalization_default.o
@@ -1866,6 +1914,9 @@ help:
 	@echo "... src/basic/base/ailayer/ailayer_input.o"
 	@echo "... src/basic/base/ailayer/ailayer_input.i"
 	@echo "... src/basic/base/ailayer/ailayer_input.s"
+	@echo "... src/basic/base/ailayer/ailayer_l2norm.o"
+	@echo "... src/basic/base/ailayer/ailayer_l2norm.i"
+	@echo "... src/basic/base/ailayer/ailayer_l2norm.s"
 	@echo "... src/basic/base/ailayer/ailayer_layer_normalization.o"
 	@echo "... src/basic/base/ailayer/ailayer_layer_normalization.i"
 	@echo "... src/basic/base/ailayer/ailayer_layer_normalization.s"
@@ -1938,6 +1989,9 @@ help:
 	@echo "... src/basic/default/ailayer/ailayer_input_default.o"
 	@echo "... src/basic/default/ailayer/ailayer_input_default.i"
 	@echo "... src/basic/default/ailayer/ailayer_input_default.s"
+	@echo "... src/basic/default/ailayer/ailayer_l2norm_default.o"
+	@echo "... src/basic/default/ailayer/ailayer_l2norm_default.i"
+	@echo "... src/basic/default/ailayer/ailayer_l2norm_default.s"
 	@echo "... src/basic/default/ailayer/ailayer_layer_normalization_default.o"
 	@echo "... src/basic/default/ailayer/ailayer_layer_normalization_default.i"
 	@echo "... src/basic/default/ailayer/ailayer_layer_normalization_default.s"
